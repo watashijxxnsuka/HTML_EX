@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>날짜를 선택할 수 있는 date, month, week</title>
+</head>
+<body>
+  <form action="">
+    <h3>조회기간 선택1</h3>
+    <label>시작일
+      <!-- type="date" 는 커스터마이징하기가 어려워서 자주 사용되지는 않는다. -->
+      <input type="date" id="start1">
+    </label>
+    <label>종료일
+      <input type="date" id="end1">
+    </label>
+
+    <h3>조회기간 선택2</h3>
+    <label>시작일
+      <input type="month" id="start2">
+    </label>
+    <label>종료일
+      <input type="month" id="end2">
+    </label>
+    
+    <h3>조회기간 선택3</h3>
+    <label>시작일
+      <input type="week" id="start3">
+    </label>
+    <label>종료일
+      <input type="week" id="end3">
+    </label>
+  </form>
+</body>
+</html>

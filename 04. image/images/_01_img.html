@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지를 표출하는 img 태그</title>
+</head>
+<body>
+  <div>
+    <!-- width, height 속성을 지정하지 않으면 이미지 원본크기 그대로 표출 -->
+    <h1>이미지 원본 크기 그대로 표출</h1>
+    <h3>상위 경로의 이미지 표출</h3>
+    <!-- img 태그의 src 속성: 표출할 이미지의 경로를 지정 -->
+    <!-- alt 속성: 시각장애인을 위한 이미지를 설명하는 대체텍스트를 넣어주는 속성
+                    웹표준에 의해 필수로 입력돼야하는 속성-->
+    <!-- 상위 경로로 접근할 때는 ../ 를 사용한다. -->
+    <img src="../../../images/bit.png" alt="비트캠프 로고">
+    <h3>같은 경로에 있는 이미지 표출</h3>
+    <img src="bit.png" alt="비트캠프 로고">
+    <h3>같은 경로의 다른 폴더 안에 있는 이미지 표출</h3>
+    <!-- 같은 경로의 다른 폴더 안에 있는 이미지는 다른 폴더명/이미지파일 로 지정한다.-->
+    <img src="../bit.png" alt="비트캠프 로고">
+  </div>
+  <div>
+    <h1>지정된 크기로 이미지 표출</h1>
+    <!-- width, height 속성으로 이미지의 표출 크기를 지정할 수 있다. -->
+    <img src="bit.png" alt="비트캠프 로고" width="50px" height="50px">
+  </div>
+  <div>
+    <h1>웹에 존재하는 이미지 파일 표출</h1>
+    <!-- 웹에 존재하는 이미지 파일은 이미지 url을 src 속성값으로 지정해서 표출할 수 있다. -->
+    <img src="https://ssl.pstatic.net/melona/libs/1499/1499366/d713cb81e41e580a798c_20240604155420346.png" alt="네이버 광고">
+  </div>
+</body>
+</html>

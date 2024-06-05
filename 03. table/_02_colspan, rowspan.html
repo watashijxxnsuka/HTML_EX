@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행, 열을 병합해주는 colspan, rowspan-th, td의 속성</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        th, td {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <!--rowspan: 셀을 세로로 병합, 무조건 아래에 비어있는 행이 있어야 한다.-->
+            <th rowspan="2">이름</th>
+            <td rowspan="2">고기천</td>
+            <td rowspan="2">연락처</td>
+            <td rowspan="2">010-1111-1111</td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <th>주소</th>
+            <!--colspan: 셀을 가로로 병합, 옆에 비어있는 셀이 있어야 한다.-->
+            <td colspan="3">서울시 서초구</td>
+        </tr>
+        <tr>
+            <th>인사말</th>
+            <td colspan="3">안녕하세요.</td>
+        </tr>
+    </table>
+</body>
+</html>

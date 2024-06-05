@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표에 제목을 붙여주는 caption 태그 - table 의 자식태그로 tr 위에 작성</title>
+  <style>
+      table, th, td{ 
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+  </style>
+</head>
+<body>
+  <table>
+      <caption>
+          <b style="color:red;">Frontend Framework</b>
+          <p>요새 자주 사용되는 SPA Framework</p>
+      </caption>
+      <tr>
+          <th>언어</th>
+          <th>개발회사</th>
+          <th>배포년도</th>
+      </tr>
+      <tr>
+          <td>React</td>
+          <td>메타(구 페이스북)</td>
+          <td>2013</td>
+      </tr>
+      <tr>
+          <td>Vue</td>
+          <td>MIT</td>
+          <td>2012</td>
+      </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여러 컬럼(열)을 그룹화하여 컬럼별로 스타일을 입히는 colgroup, col 태그</title>
+  <style>
+      table, th, td{ 
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+  </style>
+</head>
+<body>
+  <table>
+      <caption>
+          <b style="color:red;">Frontend Framwork</b>
+          <p>요새 자주 사용되는 SPA Framework</p>
+      </caption>
+      <!--colgroup: caption 태그 뒤, tr 태그 위에 선언
+                    컬럼들을 묶어주는 역할-->
+      <colgroup>
+        <!--col: colgroup 태그 안에서 선언가능한 태그
+                  컬럼마다 스타일을 다르게 줄 수 있는 태그
+                  col 태그의 개수는 최대 테이블에 존재하는 컬럼의 개수
+                  닫는 태그가 없다.
+                  오로지 셀에 관련된 스타일만 적용가능하다.
+        -->
+          <col style="background-color: yellow;">
+          <col style="background-color: aqua;">
+          <col style="background-color: lightgreen; width: 1000px;">
+      </colgroup>
+      <tr>
+          <th>언어</th>
+          <th>개발회사</th>
+          <th>배포년도</th>
+      </tr>
+      <tr>
+          <td>React</td>
+          <td>메타(구 페이스북)</td>
+          <td>2013</td>
+      </tr>
+      <tr>
+          <td>Vue</td>
+          <td>MIT</td>
+          <td>2012</td>
+      </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radio, checkbox 와 label 함께 사용하기</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h3>프로그래밍 언어(복수 선택가능)</h3>
+  <ul>
+    <li>
+        <input type="checkbox">자바
+    </li>
+    <li>
+        <label>
+          <input type="checkbox">C언어
+        </label>
+    </li>
+    <li>
+          <label>
+            <input type="checkbox">파이썬
+          </label>
+    </li>
+  </ul>
+  <h3>데이터베이스(중복선택 불가능)</h3>
+  <ul>
+    <li>
+        <input type="radio" name="database">Oracle 
+    </li>
+    <li>
+        <label>
+          <input type="radio" name="database">MySQL
+        </label>
+    </li>
+    <li>
+        <label>
+          <input type="radio" name="database">MSSQL
+        </label>
+    </li>
+  </ul>
+</body>
+</html>

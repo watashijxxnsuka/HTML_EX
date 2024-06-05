@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력한 내용을 그대로 표시하는 pre 태그</title>
+</head>
+<body>
+    <!--pre 태그에는 alt 속성이 없어서
+    대체 텍스트를 넣으려면 figure 태그로 감싸고
+    figcaption 태그를 이용해서 대체텍스트를 입력한다.-->
+    <figure aria-labelledby="description">
+        <pre>
+public static void main(String[] args) {
+    System.out.println("hello world");
+}
+        </pre>
+        <figcaption id="description">
+            hello world를 출력하는 자바프로그램
+        </figcaption>
+    </figure>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 태그의 type 속성</title>
+</head>
+<body>
+  <form action="/user/join" method="get">
+    <!-- type="hidden": 화면에서 입력창을 숨긴다. 
+      요청을 보낼때는 hidden 인 input 의 데이터도 함께 전달-->
+    <input type="hidden" name="hiddeninput" value="aaaa">
+    <div>
+      <label for="">아이디</label>
+      <!-- type="text": 한줄짜리 텍스트를 입력받는 입력창 생성-->
+      <input type="text" id="userId" name="userId">
+    </div>
+    <div>
+      <label for="">비밀번호</label>
+      <!-- type="password": 한줄짜리 텍스트를 입력받는 입력창 생성.
+      입력하는 데이터를 * 처리해서 표출한다. 전송될 때는 입력한 내용 그대로 전송.-->
+      <input type="password" id="userPW" name="userPW">
+    </div>
+    <div>
+      <label for="email">이메일</label>
+      <!-- type="email": 이메일 형식의 데이터를 입력할 수 있는 입력창을 생성
+      이메일 형식에 맞지 않으면 submit 되지 않는다.-->
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="tel">전화번호</label>
+      <!-- type="tel": 전화번호를 입력하는 입력창 생성.
+      pattern 과 함께 사용해서 전화번호의 형식을 지정해야한다.
+      pattern 에는 정규식 사용가능.-->
+      <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+    </div>
+    <div>
+      <label for="homepage">홈페이지</label>
+      <!-- type="url": url 주소를 입력할 수 있는 입력창 생성.
+      url 주소의 형식과 맞지 않은 데이터가 입력되면 submit 되지 않는다.-->
+      <input type="url" id="homepage" name="homepage">
+    </div>
+    <input type="submit" value="전송하기">
+  </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 태그에 제목을 붙여주는 label</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: 20px;
+    }
+
+    li label {
+      width: 70px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <form action="/user/login" method="post">
+    <ul>
+      <li>
+        <!-- label: input 태그에 제목을 달아주는 태그-->
+        <label>
+          아이디<input type="text">
+        </label>
+      </li>
+      <li>
+        <label for="">비밀번호</label>
+        <input type="text" id="password">
+      </li>
+    </ul>
+  </form>
+</body>
+</html>

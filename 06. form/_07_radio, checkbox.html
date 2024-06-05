@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택할 수 있는 input 을 만들어주는 radio, checkbox</title>
+</head>
+<body>
+    <form action="/subject/submit">
+      <fieldset>
+        <legend>신청과목(복수선택가능)</legend>
+        <label>
+          <!-- type="checkbox": 중복으로 선택 가능한 체크박스 생성. 
+            name 속성으로 그룹화하여 사용할 수 있다.-->
+            <!-- checkbox 와 radio 는 입력받는 값이 아니고
+            선택되는 값들이기 때문에 미리 value 를 지정해야 한다.-->
+          <input type="checkbox" name="subject" value=java">java
+        </label>
+        <label>
+          <input type="checkbox" name="subject" value=C">C언어
+        </label>
+        <label>
+          <input type="checkbox" name="subject" value=python">파이썬
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>수강요일</legend>
+        <label>
+          <!-- type="radio": 중복 선택이 가능한 라디오버튼 생성
+            name 속성으로 그룹화하면 중복 선택이 불가능해진다.-->
+          <input type="radio" name="day" value="mon">월요일
+        </label>
+        <label>
+          <input type="radio" name="day" value="tue">화요일
+        </label>
+        <label>
+          <input type="radio" name="day" value="wen">수요일
+        </label>
+      </fieldset>
+      <input type="submit" value="수강신청">
+    </form>
+</body>
+</html>

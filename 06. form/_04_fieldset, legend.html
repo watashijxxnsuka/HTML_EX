@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 안의 태그를 그룹으로 묶어주는 fieldset, fieldset 태그에 제목을 붙여주는 legend 태그</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: 20px;
+    }
+
+    li label {
+      width: 80px;
+    }
+
+    fieldset {
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <!-- fieldset: form 태그 안의 태그들의 영역을 지정. 외곽선을 그려주는 태그 -->
+    <fieldset>
+      <!-- legend: 영역으로 구분된 fieldset 에 제목을 붙여주는 태그 -->
+        <legend>주문자 정보</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" value="aaaa">
+          </li>
+          <li>
+            <label for="tel">연락처</label>
+            <input type="text" id="tel">
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+          <legend>배송지 정보</legend>
+          <ul>
+            <li>
+            <label for="receiveName">받는사람 이름</label>
+            <input type="text" id="receiveName" >
+            </li>
+            <li>
+              <label for="address">주소</label>
+              <input type="text" id="address">
+            </li>
+          </ul>
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표를 만들어주는 table, tr, th, td 태그</title>
+    <!--내부 Style Sheet-->
+    <style>
+        table, th, td {
+            /*외곽선을 그려주는 속성*/
+            border: 1px black solid;
+            /*외곽선의 표출 방법*/
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!--table 태그: 표를 생성하는 태그-->
+    <table>
+        <!--tr 태그: 표에 행을 추가하는 태그-->
+        <tr>
+            <!--th 태그: 제목 셀-->
+            <th>Java</th>
+            <!--td 태그: 내용 셀-->
+            <td>변수</td>
+            <td>클래스</td>
+        </tr>
+        <tr>
+            <th>Oracle</th>
+            <td>DML</td>
+            <td>DDL</td>
+        </tr>
+    </table>
+</body>
+</html>
