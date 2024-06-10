@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input 태그의 속성들</title>
+</head>
+<body>
+  <form action="/user/join">
+    <div>
+      <label>아이디
+        <!-- autofocus 속성: 화면이 로드되면서 해당 속성이 지정된 input 에 마우스커서가 생성 -->
+        <input type="text" id="username" autofocus>
+    </label>
+  </div>
+
+    <div>
+      <label>비밀번호
+        <!-- placeholder 속성: 입력하는 내용에 대한 힌트를 입력할 수 있는 속성 -->
+        <input type="password" name="password" placeholder="비밀번호는 특수문자, 숫자, 영문자 조합의 9자리 이상으로 설정" >
+      </label>
+    </div>
+
+    <div>
+      <label>닉네임
+        <!-- readonly 속성: input 태그를 읽기 전용 태그로 변경하는 속성 -->
+        <input type="text" name="nickname" value="bit" readonly>
+      </label>
+    </div>
+
+    <div>
+      <label>닉네임2
+        <!-- disabled 속성: input 태그를 읽기 전용 태그로 변경하는 속성 
+            submit 될 때 해당 input 태그는 전송되지 않는다. -->
+        <input type="text" name="nickname2" value="bit" disabled>
+      </label>
+    </div>
+
+    <div>
+      <label>이메일
+        <!-- required 속성: input 태그를 필수값으로 지정.
+            required 속성이 지정된 input 태그에 값이 입력되지 않으면 submit 되지 않는다. -->
+        <input type="text" name="email" required>
+      </label>
+    </div>
+    <input type="submit" value="전송">
+  </form>
+</body>
+</html>

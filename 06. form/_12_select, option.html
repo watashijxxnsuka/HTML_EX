@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>드롭다운 목록을 만드는 select, option 태그</title>
+</head>
+<body>
+  <form>
+    <h3>자신있는 언어</h3>
+    <!-- select: 드롭다운 목록의 시작과 끝을 알리는 태그 -->
+    <!-- size: 드롭다운 항목의 표출 개수를 지정 -->
+    <!-- multiple 속성: ctrl + 항목 선택 시 여러개의 항목을 선택할 수 있는 속성 -->
+    <select name="language" id="language" size="3" multiple>
+      <!-- option: 드롭다운 목록의 항목을 만들어주는 태그 -->
+      <!-- selected 속성: selected 속성이 추가된 항목을 기본값으로 지정 -->
+      <option value="java">자바</option>
+      <option value="C">C언어</option>
+      <option value="c++">C++</option>
+      <option value="mysql" selected>MYSQL</option>
+      <option value="oracle">Oracle</option>
+      <option value="javascript">Javascript</option>
+      <option value="python">Python</option>
+    </select>
+  </form>
+</body>
+</html>

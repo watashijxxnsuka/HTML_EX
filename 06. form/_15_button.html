@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼을 생성하는 button 태그</title>
+</head>
+<body>
+  <form action="/user/login">
+    <div>
+      <label>아이디
+        <input type="text" name="username" id="username">
+      </label>
+    </div>
+    <div>
+      <label>비밀번호
+        <input type="password" name="password" id="password">
+      </label>
+    </div>
+    <div>
+      <!-- button 태그의 기본 타입은 submit -->
+      <!-- input 태그의 submit, reset, button 타입과 다른점은
+          input 에서는 버튼안의 내용을 value 속성으로 지정했었는데
+          button 태그에서는 여는태그와 닫는태그 사이에 텍스트로 지정한다. -->
+        <button value="aaaa">전송</button>
+        <!-- type="button": 아무기능이 없는 버튼 생성 -->
+        <button type="button" onclick="alert('버튼클릭됨');">아무기능없죠</button>
+        <!-- type="reset": 폼 초기화 -->
+        <button type="reset">폼 다시 작성</button>
+        <!-- button 태그 안에 img 태그를 사용해서 이미지로된 버튼을 만들 수 있다. -->
+        <button style="margin: 0; padding: 0; border: 0;">
+          <img src="login.jpg" alt="로그인 버튼">
+        </button>
+    </div>
+  </form>
+</body>
+</html>

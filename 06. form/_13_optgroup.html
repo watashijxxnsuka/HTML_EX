@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>드롭다운 항목들을 그룹화 해주는 optgroup </title>
+</head>
+<body>
+  <form>
+    <h3>자신있는 언어</h3>
+    <!-- select: 드롭다운 목록의 시작과 끝을 알리는 태그 -->
+    <!-- size: 드롭다운 항목의 표출 개수를 지정 -->
+    <!-- multiple 속성: ctrl + 항목 선택 시 여러개의 항목을 선택할 수 있는 속성 -->
+    <select name="language" id="language">
+      <!-- optgroup: 드롭다운 항목들을 그룹화하여 표시 -->
+      <!-- label 속성: 그룹화된 항목들의 제목을 붙임-->
+    <optgroup label="컴파일 언어">
+      <!-- option: 드롭다운 목록의 항목을 만들어주는 태그 -->
+      <!-- selected 속성: selected 속성이 추가된 항목을 기본값으로 지정 -->
+      <option value="java">자바</option>
+      <option value="C">C언어</option>
+      <option value="c++">C++</option>
+    </optgroup>
+    <optgroup label="DBMS">
+      <option value="mysql" selected>MYSQL</option>
+      <option value="oracle">Oracle</option>
+    </optgroup>
+    <optgroup label="인터프리트 언어">
+      <option value="javascript">Javascript</option>
+      <option value="python">Python</option>
+    </optgroup>
+    </select>
+  </form>
+</body>
+</html>

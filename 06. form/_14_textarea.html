@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여러 줄 텍스트를 입력받는 textarea 태그</title>
+</head>
+<body>
+  <form action="">
+    <h3>게시글 작성</h3>
+    <div>
+      <label>제목
+        <input type="text" id="title" name="title">
+      </label>
+    </div>
+    <div>
+      <label>내용
+        <!-- cols 속성: 가로 길이 지정 -->
+        <!-- rows 속성: 세로 길이 지정 -->
+        <!-- resize: CSS 속성(style), textarea 의 크기를 고정하거나 크기를 조절하는 방향을 지정
+          both: 가로, 세로 모두 크기를 조절 가능
+          horizontal: 가로만 크기를 조절 가능
+          vertical: 세로만 크기를 조절 가능
+          none: 크기를 고정 -->
+        <textarea name="content" id="content" cols="200" rows="15" style="resize: both;"></textarea>
+      </label>
+    </div>
+  </form>
+</body>
+</html>
